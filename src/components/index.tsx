@@ -1,3 +1,4 @@
+import React from "react";
 import image2 from "./image-2.png";
 import image from "./image.png";
 
