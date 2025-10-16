@@ -1,3 +1,4 @@
+import React from "react";
 import { HeroLayout } from './components/index';
 
 function App() {
