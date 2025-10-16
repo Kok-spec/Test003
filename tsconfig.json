@@ -9,9 +9,10 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
     "paths": {
-      "$amplify/*": [
-        "../.amplify/generated/*"
+      "@amplify/*": [
+        "./../amplify/generated/*"
       ]
     }
   }
