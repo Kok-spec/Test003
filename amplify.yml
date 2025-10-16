@@ -6,6 +6,7 @@ frontend:
         - npm ci
     build:
       commands:
+        - npx tsc --project tsconfig.json
         - npm run build
   artifacts:
     baseDirectory: dist
