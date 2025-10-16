@@ -1,17 +1,24 @@
-version: 1
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - npm ci
-    build:
-      commands:
-        - npx tsc --project tsconfig.json
-        - npm run build
-  artifacts:
-    baseDirectory: dist
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["react"],
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@amplify/*": [
+        "./../amplify/generated/*"
+      ]
+    }
+  },
+  "include": ["src", "vite-env.d.ts"]
+}
