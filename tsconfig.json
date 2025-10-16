@@ -11,6 +11,7 @@
     "jsx": "react-jsx",
     "allowImportingTsExtensions": true,
     "noEmit": true,
+    "types": ["react"],
     "paths": {
       "@amplify/*": [
         "./../amplify/generated/*"
