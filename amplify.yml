@@ -6,7 +6,8 @@ frontend:
         - npm ci
     build:
       commands:
-        - npm run build
+        - npx tsc --project tsconfig.build.json
+        - vite build
   artifacts:
     baseDirectory: dist
     files:
